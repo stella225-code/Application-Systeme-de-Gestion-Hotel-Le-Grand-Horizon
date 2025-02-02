@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1187.0" styleClass="pane3" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuPrincipalController">
+   <children>
+      <AnchorPane maxHeight="52.0" maxWidth="1173.0" prefHeight="52.0" prefWidth="1173.0" stylesheets="@application.css" StackPane.alignment="TOP_LEFT">
+         <children>
+            <Button fx:id="close11" layoutX="37.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent;" />
+            <TextField fx:id="recherche11" layoutX="118.0" layoutY="10.0" prefHeight="25.0" prefWidth="254.0" promptText="Recherche" style="-fx-background-color: white;" styleClass="progress" stylesheets="@application.css" />
+            <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="342.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/images/65.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="54.0" layoutX="542.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/images/icon.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="566.0" layoutY="5.0" prefHeight="33.0" prefWidth="341.0" text="Hotel Le Grand Horizon" textFill="#434040" wrapText="true">
+               <font>
+                  <Font name="Century Gothic Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="62.0" layoutX="534.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../HoteloranaisSystemDeGestion/src/application/image/images/Capture%20d’écran%202024-09-13%20104507.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="close21" layoutX="1128.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent; -fx-background-radius: 8px;">
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../HoteloranaisSystemDeGestion/src/application/image/images/15665883.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </AnchorPane>
+      <HBox fx:id="root111" maxHeight="-Infinity" maxWidth="900.0" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="595.0" prefWidth="900.0" styleClass="root1" stylesheets="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/style.css" StackPane.alignment="CENTER_LEFT">
+         <children>
+            <VBox maxWidth="235.0" prefHeight="710.0" prefWidth="250.0" styleClass="pane3b" stylesheets="@application.css">
+               <children>
+                  <AnchorPane fx:id="side_ankerpane11" maxWidth="235.0" prefHeight="645.0" prefWidth="250.0" styleClass="side_ankerpane" stylesheets="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/style.css">
+                     <children>
+                        <Button fx:id="tableaubordbtn" layoutX="5.0" layoutY="260.0" mnemonicParsing="false" onAction="#switchform" prefHeight="37.0" prefWidth="188.0" styleClass="pane1" stylesheets="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/style.css" text="Tableau de bord" textFill="#e1dd67">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="25.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/images/3694422.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="chambrebtn" layoutX="29.0" layoutY="309.0" mnemonicParsing="false" onAction="#switchform" prefHeight="28.0" prefWidth="155.0" styleClass="pane3b" stylesheets="@application.css" text="Chambre" textFill="#433333">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="41.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/images/2977956.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="clientbtn" layoutX="28.0" layoutY="348.0" mnemonicParsing="false" onAction="#switchform" prefHeight="22.0" prefWidth="155.0" styleClass="pane3b" stylesheets="@application.css" text="Client" textFill="#393636" wrapText="true">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="41.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/images/9402499.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="employebtn" layoutX="26.0" layoutY="387.0" mnemonicParsing="false" onAction="#switchform" prefHeight="29.0" prefWidth="155.0" styleClass="pane3b" stylesheets="@application.css" text="Employes" textFill="#4d4747">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="42.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Pictures/images/5356444.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="contactbtn" layoutX="26.0" layoutY="503.0" mnemonicParsing="false" onAction="#switchform" prefHeight="28.0" prefWidth="155.0" styleClass="pane3b" stylesheets="@application.css" text="Conatcte">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="resevationbtn" layoutX="27.0" layoutY="426.0" mnemonicParsing="false" onAction="#openCheckInPage" prefHeight="29.0" prefWidth="155.0" styleClass="pane3b" stylesheets="@application.css" text="Reservation" textFill="#2f2c2c">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="20.0" fitWidth="19.0" layoutX="40.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Pictures/images/804464.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="61.0" layoutY="606.0" text="Deconnexion" textFill="#e4d2d2">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                       <!--  <ImageView fx:id="deconnection" fitHeight="28.0" fitWidth="16.0" layoutX="37.0" layoutY="574.0" pickOnBounds="true" preserveRatio="true">
+                           <image> 
+                                          <Image url="@image/images/13984450.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="25.0" layoutY="1.0" prefHeight="28.0" prefWidth="155.0" text="Le Grand Horizon" textFill="#f2e8e8" wrapText="true">
+                                       <font>
+                                          <Font name="Century Gothic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="24.0" fitWidth="25.0" layoutX="19.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/images/2955135.png" />
+                                       </image>
+                                    </ImageView>-->
+                        <Line endX="101.0" endY="-18.0" layoutX="75.0" layoutY="230.0" startX="-48.5" startY="-18.0" stroke="#fffefe" />
+                        <Label fx:id="labelNomUtilisateur" alignment="CENTER" layoutX="29.0" layoutY="163.0" prefHeight="45.0" prefWidth="144.0" text="Miss Stella !" textFill="#2715ee">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imageProfil" fitHeight="75.0" fitWidth="110.0" layoutX="57.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Pictures/images/user-png-icon-download-icons-logos-emojis-users-2240.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="deconnecter" layoutX="26.0" layoutY="601.0" mnemonicParsing="false" onAction="#deconnexion" prefHeight="24.0" prefWidth="30.0">
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../HoteloranaisSystemDeGestion/src/application/image/images/13984450.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <ImageView fitHeight="28.0" fitWidth="26.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../HoteloranaisSystemDeGestion/src/application/image/images/2955135.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="52.0" layoutY="10.0" text="Hotel Gand Horizon" textFill="#f5efef">
+                           <font>
+                              <Font name="Britannic Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="12.0" fitWidth="8.0" layoutX="169.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Pictures/images/Blue-Button-PNG-Clipart.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="creercomptebtn" layoutX="28.0" layoutY="465.0" mnemonicParsing="false" onAction="#switchform" prefHeight="28.0" prefWidth="155.0" styleClass="pane3b" stylesheets="@application.css" text="New Compte">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="faqbtn" layoutX="26.0" layoutY="541.0" mnemonicParsing="false" onAction="#switchform" prefHeight="28.0" prefWidth="155.0" styleClass="pane3b" stylesheets="@application.css" text="FAQ">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="boutonChargerImage" layoutX="50.0" layoutY="50.0" mnemonicParsing="false" onAction="#chargerImage" style="-fx-background-color: transparent;" stylesheets="@application.css" text="Telecharger image" textFill="#f53d3d" />
+                     </children>
+                     <VBox.margin>
+                        <Insets right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </HBox>
+      <AnchorPane fx:id="clientancho" onDragDetected="#switchform" prefHeight="640.0" prefWidth="942.0" styleClass="root1" stylesheets="@application.css">
+         <children>
+            <TableView fx:id="tabledonneeclient" layoutX="10.0" layoutY="70.0" prefHeight="509.0" prefWidth="918.0" stylesheets="@application.css" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="70.0">
+               <columns>
+                  <TableColumn fx:id="idclient" prefWidth="60.0" text="Clients#" />
+                  <TableColumn fx:id="nomclient" prefWidth="123.0" text="Nom &amp; Prenom" />
+                  <TableColumn fx:id="telclient" prefWidth="89.0" text="Telephone" />
+                  <TableColumn fx:id="totalpayer" prefWidth="105.0" text="Total Payer (CFA)" />
+                  <TableColumn fx:id="datearriverclient" prefWidth="100.0" text="Date arrivée" />
+                  <TableColumn fx:id="datesortirclient" prefWidth="100.0" text="Date sortir" />
+                  <TableColumn fx:id="adresseclient" prefWidth="99.0" text="adresse" />
+                  <TableColumn fx:id="genreclient" prefWidth="110.0" text="Genre" />
+                  <TableColumn fx:id="prenomclient" prefWidth="131.0" text="Commentaire" />
+               </columns>
+            </TableView>
+            <TextField fx:id="rechercheclient" layoutX="14.0" layoutY="14.0" onKeyTyped="#rechercheClient" prefHeight="30.0" prefWidth="303.0" promptText="Recherche par nom , prenom ou numero" styleClass="pane3b" stylesheets="@application.css">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="779.0" layoutY="17.0" mnemonicParsing="false" onAction="#modifierClient" style="-fx-border-radius: 0PX; -fx-background-radius: 0PX;" styleClass="pane1" stylesheets="@application.css" text="Enregistrer Modification" textFill="#fffafa" />
+            <Button layoutX="663.0" layoutY="17.0" mnemonicParsing="false" onAction="#supprimerClient" prefHeight="25.0" prefWidth="104.0" style="-fx-border-radius: 0PX; -fx-background-radius: 0PX;" styleClass="pane1" stylesheets="@application.css" text="Supprimer" textFill="#fffafa" />
+            <Button layoutX="779.0" layoutY="588.0" mnemonicParsing="false" onAction="#openCheckInPage" style="-fx-border-radius: 0PX; -fx-background-radius: 0PX;" styleClass="pane1" stylesheets="@application.css" text="Enregistrer un Client" textFill="#e8dbdb" />
+            <Label layoutX="343.0" layoutY="14.0" prefHeight="22.0" prefWidth="293.0" text=" &quot;Fidélisez Vos Clients&quot;">
+               <font>
+                  <Font name="Monospaced Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets top="85.0" />
+         </opaqueInsets>
+         <StackPane.margin>
+            <Insets left="250.0" top="60.0" />
+         </StackPane.margin>
+      </AnchorPane>
+      <Pane fx:id="tableaubordancho1" onDragDetected="#switchform" onMouseClicked="#onTableauDeBordButtonClicked" prefHeight="666.0" prefWidth="1173.0" style="-fx-background-color: F1F4FB;" styleClass="root1" stylesheets="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/style.css" visible="false">
+         <children>
+            <Pane layoutX="26.0" layoutY="89.0" prefHeight="219.0" prefWidth="188.0" styleClass="pane1" stylesheets="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/style.css">
+               <children>
+                  <Label layoutX="7.0" layoutY="24.0" prefHeight="27.0" prefWidth="125.0" text="Chambre Disponible : " textFill="#ddd5d5">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="93.0" prefHeight="29.0" prefWidth="104.0" text="Cambre Occupée : " textFill="#ddd5d5">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="159.0" prefHeight="26.0" prefWidth="104.0" text="Chambre Total : " textFill="#ddd5d5">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chambresDisponiblesLabel" layoutX="20.0" layoutY="43.0" onDragDetected="#afficherStatistiquesChambres" onMouseClicked="#afficherStatistiquesChambres" prefHeight="27.0" prefWidth="125.0" text="Chambre Disponible : " textFill="#ddd5d5">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chambresOccupeesLabel" layoutX="18.0" layoutY="107.0" onDragDetected="#afficherStatistiquesChambres" onMouseClicked="#afficherStatistiquesChambres" prefHeight="29.0" prefWidth="104.0" text="Cambre Occupée : " textFill="#ddd5d5">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalChambresLabel" layoutX="21.0" layoutY="173.0" prefHeight="26.0" prefWidth="104.0" text="Chambre Total : " textFill="#ddd5d5">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="46.0" layoutY="35.0" prefHeight="29.0" prefWidth="332.0" text="TABLEAU DE BORD">
+               <font>
+                  <Font name="Monospaced Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="214.0" layoutY="36.0" prefHeight="28.0" prefWidth="421.0" text=" &quot;Vue d'Ensemble de Vos Performances&quot;">
+               <font>
+                  <Font name="Monospaced Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="646.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/images/7692511.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="dateTimeLabel" layoutX="54.0" layoutY="14.0" prefHeight="16.0" prefWidth="188.0" text="Aujoud'hui">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutX="236.0" layoutY="220.0" prefHeight="75.0" prefWidth="203.0" styleClass="pane1" stylesheets="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/style.css">
+               <children>
+                  <Label fx:id="labelRevenuTotal" layoutX="18.0" layoutY="18.0" prefHeight="49.0" prefWidth="171.0" text="Ciffre d'affaire" textFill="#fff9f9">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Pane layoutX="235.0" layoutY="99.0" prefHeight="57.0" prefWidth="205.0" styleClass="pane1" stylesheets="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/style.css">
+               <children>
+                  <Label fx:id="revenuJournalierLabel" layoutX="14.0" layoutY="-1.0" prefHeight="52.0" prefWidth="162.0" text="revenu /JOUR" textFill="#fff9f9">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Pane layoutX="236.0" layoutY="160.0" prefHeight="57.0" prefWidth="203.0" styleClass="pane1" stylesheets="@../../../../Documents/NetBeansProjects/ui_ux%20design/src/ui_ux/design/style.css">
+               <children>
+                  <Label fx:id="nombreReservationsLabel" layoutX="13.0" layoutY="14.0" prefHeight="37.0" prefWidth="162.0" text="NBRES RESERVATION/JOURl" textFill="#fff9f9">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <AnchorPane layoutX="-263.0" layoutY="-55.0" prefHeight="45.0" prefWidth="982.0" stylesheets="@application.css" visible="false">
+               <children>
+                  <Button fx:id="close1" layoutX="37.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent;" />
+                  <TextField fx:id="recherche1" layoutX="118.0" layoutY="10.0" prefHeight="25.0" prefWidth="254.0" promptText="Recherche" style="-fx-background-color: white;" styleClass="progress" stylesheets="@application.css">
+                          <!--  <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font> -->
+                        </TextField>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="342.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/images/65.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="54.0" layoutX="542.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/images/icon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="566.0" layoutY="5.0" prefHeight="33.0" prefWidth="341.0" text="Hotel Le Grand Horizon" textFill="#434040" wrapText="true">
+                     <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="close2" layoutX="20.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent; -fx-background-radius: 8px;">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../HoteloranaisSystemDeGestion/src/application/image/images/15665883.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <PieChart fx:id="tauxOccupationChambresChart" layoutX="12.0" layoutY="339.0" onDragDetected="#afficherTauxOccupationChambres" onMouseClicked="#afficherTauxOccupationChambres" prefHeight="276.0" prefWidth="320.0" title="Statut des chambres" />
+            <BarChart fx:id="barChartm" alternativeColumnFillVisible="true" layoutX="450.0" layoutY="100.0" onDragDetected="#afficherRevenusParmois" onMouseClicked="#afficherRevenusParmois" prefHeight="206.0" prefWidth="468.0" title="Revenu/année">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxi1" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxi2" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <LineChart fx:id="reservationsHebdoChart" alternativeColumnFillVisible="true" layoutX="295.0" layoutY="339.0" onDragDetected="#afficherReservationsHebdomadaires" onMouseClicked="#afficherReservationsHebdomadaires" prefHeight="294.0" prefWidth="303.0" title="Reservation/semaine">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxisReservations" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxisReservations" side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <BarChart fx:id="barChartRevenusjour" layoutX="606.0" layoutY="340.0" prefHeight="276.0" prefWidth="332.0" title="Revenu/semaine">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxisb" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxisb" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Button layoutX="772.0" layoutY="18.0" mnemonicParsing="false" onAction="#setupAutoRefresh" text="Rafraichir" />
+         </children>
+         <StackPane.margin>
+            <Insets left="250.0" top="60.0" />
+         </StackPane.margin>
+      </Pane>
+      <AnchorPane fx:id="chambreancho" onDragDetected="#switchform" prefHeight="613.0" prefWidth="1032.0" visible="false" StackPane.alignment="CENTER_LEFT">
+     <!--    <children>  -->
+            <AnchorPane layoutX="50.0" layoutY="49.0" prefHeight="526.0" prefWidth="371.0" styleClass="pane3" stylesheets="@application.css">
+               <children>
+                  <TextField fx:id="idchambre" layoutX="126.0" layoutY="33.0" prefHeight="34.0" prefWidth="171.0" promptText="Numero de chambre" styleClass="progress" stylesheets="@application.css" />
+                  <Label layoutX="60.0" layoutY="41.0" text="Chambre#" />
+                  <Label layoutX="19.0" layoutY="90.0" text="Type de Chambre" />
+                  <ComboBox fx:id="typechambre" layoutX="126.0" layoutY="81.0" onAction="#typechambre" prefHeight="34.0" prefWidth="173.0" promptText="Choix type Chambre" styleClass="root1" stylesheets="@application.css" />
+                  <Label layoutX="85.0" layoutY="134.0" text="Status" />
+                  <ComboBox fx:id="statutchambre" layoutX="128.0" layoutY="126.0" onAction="#statutchambres" prefHeight="34.0" prefWidth="173.0" promptText=" Choix Status de Chambre" styleClass="progress" stylesheets="@application.css" />
+                  <TextField fx:id="prixchambre" layoutX="129.0" layoutY="172.0" prefHeight="34.0" prefWidth="171.0" promptText="Mettre le prix " styleClass="progress" stylesheets="@application.css" />
+                  <Label layoutX="89.0" layoutY="181.0" text="prix" />
+                  <Button fx:id="ajouterchambre" layoutX="53.0" layoutY="293.0" mnemonicParsing="false" onAction="#chambreAjouter" prefHeight="25.0" prefWidth="110.0" style="-fx-border-color: F58520;" styleClass="root1" stylesheets="@application.css" text="Ajouter" />
+                  <Button fx:id="supprimerchambre" layoutX="172.0" layoutY="293.0" mnemonicParsing="false" onAction="#chambresupprimer" prefHeight="25.0" prefWidth="110.0" style="-fx-border-color: F58520;" styleClass="root1" stylesheets="@application.css" text="Effacer" />
+               <Button fx:id="checkin1" layoutX="22.0" layoutY="483.0" mnemonicParsing="false" onAction="#openCheckInPage" prefHeight="29.0" prefWidth="173.0" styleClass="pane1" stylesheets="@application.css" text="Faire une Reservation" textFill="#e80f0f" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="50.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane layoutX="375.0" layoutY="7.0" prefHeight="569.0" prefWidth="597.0" styleClass="root1" stylesheets="@application.css">
+               <children>
+                  <TableView fx:id="tabledonneechambre" layoutX="17.0" layoutY="43.0" onMouseClicked="#selectiolisdonnechambre" prefHeight="481.0" prefWidth="583.0" stylesheets="@application.css" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="43.0">
+                    <columns>
+                      <TableColumn fx:id="colidchambre" prefWidth="119.0" text="Chambre#" />
+                      <TableColumn fx:id="coltypechambre" prefWidth="166.0" text="Type de chambre" />
+                        <TableColumn fx:id="colstatutchambre" prefWidth="148.0" text="Status" />
+                        <TableColumn fx:id="colprixchambre" prefWidth="135.0" text="prix" />
+                    </columns>
+                  </TableView>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="262.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../HoteloranaisSystemDeGestion/src/application/image/images/8607433.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="recherchechambre" layoutX="40.0" layoutY="8.0" onAction="#rechercheChambre" prefHeight="14.0" prefWidth="249.0" promptText="Recherche" styleClass="pane3b" stylesheets="@application.css">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+               <Button fx:id="modifier" layoutX="76.0" layoutY="529.0" mnemonicParsing="false" onAction="#chambrmodifier1" prefHeight="25.0" prefWidth="110.0" styleClass="pane1" stylesheets="@application.css" text="Modifier" textFill="#f5ecec" />
+               <Button fx:id="Supprimer" layoutX="190.0" layoutY="529.0" mnemonicParsing="false" onAction="#chambresupp" prefHeight="25.0" prefWidth="110.0" styleClass="pane1" stylesheets="@application.css" text="Supprimer" textFill="#f2ecec" />
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="7.0" layoutY="12.0" prefHeight="33.0" prefWidth="341.0" text="Gestion des Chambres" textFill="#434040" wrapText="true">
+               <font>
+                  <Font name="Bauhaus 93" size="26.0" />
+               </font>
+            </Label>
+          <!--  <Button fx:id="modifierchambre" layoutX="467.0" layoutY="580.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="79.0" styleClass="pane1" stylesheets="@application.css" text="Modifier" textFill="#e4dada" />
+            <Button fx:id="enregistrerchambre" layoutX="726.0" layoutY="579.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" styleClass="pane1" stylesheets="@application.css" text="Enregistrer" textFill="#fff7f7" />
+                   <Button layoutX="565.0" layoutY="579.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="79.0" styleClass="pane1" stylesheets="@application.css" text="actualiser" textFill="#fcf0f0" />
+             
+               </children>
+               <StackPane.margin>
+                  <Insets left="220.0" right="100.0" top="85.0" />
+               </StackPane.margin> -->
+         <padding>
+            <Insets left="60.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets left="200.0" top="50.0" />
+         </StackPane.margin>
+      </AnchorPane>
+      <AnchorPane fx:id="contactancho" onDragDetected="#switchform" prefHeight="451.0" prefWidth="745.0" style="-fx-background-color: F1F4FB;" visible="false">
+         <children>
+            <ImageView fitHeight="585.0" fitWidth="693.0" layoutX="14.0" layoutY="38.0">
+               <image>
+                  <Image url="@images/Leonardo_Phoenix_A_modern_hotel_management_software_homepage_f_1.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="37.0" layoutY="22.0" prefHeight="488.0" prefWidth="597.0" styleClass="progress" stylesheets="@../../../../Pictures/style.css">
+               <children>
+                  <VBox layoutX="20.0" layoutY="80.0" prefHeight="410.0" prefWidth="525.0" spacing="10.0">
+                     <children>
+                        <GridPane hgap="10.0" prefHeight="302.0" prefWidth="525.0" vgap="10.0">
+                           <children>
+                              <Label text="Nom :" textFill="#fff6e9" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                                 <font>
+                                    <Font name="Britannic Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="nomField" prefHeight="25.0" prefWidth="449.0" promptText="Entrez votre nom" style="-fx-background-radius: 0px; -fx-background-color: white; -fx-border-color: black; -fx-border-radius: 0px;" styleClass="pane1" stylesheets="@application.css" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Britannic Bold" size="17.0" />
+                                 </font></TextField>
+                              <Label text="Email :" textFill="#fff6e9" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Britannic Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="emailField" promptText="Entrez votre prenom" style="-fx-background-radius: 0px; -fx-background-color: f2f2f2; -fx-border-color: black; -fx-border-radius: 0px;" styleClass="pane1" stylesheets="@application.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Britannic Bold" size="16.0" />
+                                 </font></TextField>
+                              <Label text="Sujet :" textFill="#fff6e9" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Britannic Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="sujetField" prefHeight="25.0" prefWidth="411.0" promptText="Entrez votre sujet" style="-fx-background-radius: 0px; -fx-background-color: f2f2f2; -fx-border-color: black; -fx-border-radius: 0px;" styleClass="pane1" stylesheets="@application.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Britannic Bold" size="16.0" />
+                                 </font></TextField>
+                              <Label alignment="TOP_LEFT" text="Message :" textFill="#fff6e9" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Britannic Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="messageField" prefHeight="107.0" prefRowCount="5" prefWidth="449.0" promptText="Entrez votre message" style="-fx-background-radius: 0px; -fx-border-color: black;" stylesheets="@../../../../Pictures/style.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Britannic Bold" size="17.0" />
+                                 </font></TextArea>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints maxHeight="59.0" minHeight="17.0" prefHeight="35.0" />
+                              <RowConstraints maxHeight="99.0" minHeight="57.0" prefHeight="81.0" />
+                           </rowConstraints>
+                        </GridPane>
+                        <HBox prefHeight="66.0" prefWidth="525.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="envoyerButton" onAction="#envoyerContact" prefHeight="33.0" prefWidth="127.0" style="-fx-background-radius: 0px;" styleClass="pane3" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" text="Envoyer" textFill="#433e3e" />
+                              <Button fx:id="reinitialiserButton" onAction="#reinitialiserFormulaire" prefHeight="31.0" prefWidth="115.0" style="-fx-background-radius: 0px;" styleClass="pane3" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" text="Réinitialiser" textFill="#2f1f1f" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label layoutX="145.0" layoutY="-29.0" prefHeight="45.0" prefWidth="431.0" text=" &quot;Nous Restons à Votre Écoute&quot;">
+                     <font>
+                        <Font name="Monospaced Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <StackPane.margin>
+            <Insets left="300.0" top="65.0" />
+         </StackPane.margin>
+      </AnchorPane>
+      <AnchorPane fx:id="creercompteancho" onDragDetected="#switchform" prefHeight="668.0" prefWidth="1113.0" style="-fx-background-color: white;" styleClass="root1" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" visible="false">
+         <children>
+            <HBox layoutX="47.0" layoutY="72.0" prefHeight="385.0" prefWidth="597.0" spacing="50.0">
+               <children>
+                  <VBox alignment="TOP_LEFT" spacing="10.0">
+                     <children>
+                        <Label text="Informations Personnelles">
+                           <font>
+                              <Font name="Arial Bold" size="18" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="78.0" text="Nom D'utilsateur :" />
+                        <TextField fx:id="nomUtilisateur" layoutX="10.0" layoutY="68.0" promptText="Nom utilisateur" style="-fx-border-color: #FAB411;" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" />
+                        <Label text="Nom :" />
+                        <TextField fx:id="nom" promptText="Nom" style="-fx-border-color: #FAB411;" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" />
+                        <Label text="Prénom :" />
+                        <TextField fx:id="prenom" promptText="prenom" style="-fx-border-color: #FAB411;" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" />
+                        <Label text="Email :" />
+                        <TextField fx:id="email" promptText="email" style="-fx-border-color: #FAB411;" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" />
+                        <Label text="Téléphone :" />
+                        <TextField fx:id="telephone" promptText="telephone" style="-fx-border-color: #FAB411;" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_LEFT" prefHeight="385.0" prefWidth="228.0" spacing="10.0">
+                     <children>
+                        <Label text="Mot de passe">
+                           <font>
+                              <Font name="Arial Bold" size="18" />
+                           </font>
+                        </Label>
+                        <Label text="Choisir un mot de passe :" />
+                        <TextField fx:id="motDePasse" promptText="mot de passe" style="-fx-border-color: #FAB411;" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" />
+                        <Label text="Comfirmer un mot de passe :" />
+                        <TextField fx:id="confirmerMotDePasse" promptText="mot de passe" style="-fx-border-color: #FAB411;" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox layoutX="47.0" layoutY="252.0" spacing="10.0" />
+            <VBox layoutX="327.0" layoutY="252.0" prefHeight="102.0" prefWidth="215.0" spacing="10.0">
+               <children>
+                  <Label text="Role &amp; Permissions">
+                     <font>
+                        <Font name="Arial Bold" size="18" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="clientCheckBox" text="Client" />
+                  <CheckBox fx:id="adminCheckBox" text="Administrateur" />
+                  <CheckBox fx:id="personnelCheckBox" text="Personnel" />
+                  <CheckBox fx:id="che" layoutX="10.0" layoutY="95.0" text="Autres" />
+               </children>
+            </VBox>
+            <VBox layoutX="48.0" layoutY="416.0" spacing="10.0" />
+            <HBox layoutX="47.0" layoutY="547.0" prefHeight="29.0" prefWidth="255.0" spacing="20.0">
+               <children>
+                  <Button onAction="#confirmerCreationCompte" style="-fx-background-radius: 0px; -fx-border-radius: 0px;" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" text="Confirmer de Creation" textFill="#f5e7e7">
+                     <styleClass>
+                        <String fx:value="button_accueil2" />
+                        <String fx:value="button_accueil" />
+                        <String fx:value="pane1" />
+                     </styleClass>
+                  </Button>
+                  <Button onAction="#annulerAction" prefHeight="29.0" prefWidth="78.0" style="-fx-background-radius: 0px; -fx-border-radius: 0px;" styleClass="pane1" stylesheets="@../../../HoteloranaisSystemDeGestion/src/application/application.css" text="Annuler" textFill="#ebe4e4" />
+               </children>
+            </HBox>
+         </children>
+         <StackPane.margin>
+            <Insets left="300.0" right="200.0" top="65.0" />
+         </StackPane.margin>
+      </AnchorPane>
+      <AnchorPane fx:id="faqancho" maxWidth="918.0" onDragDetected="#switchform" prefHeight="633.0" prefWidth="890.0" visible="false">
+         <children>
+
+         
+            <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="16.0" maxWidth="937.0" prefHeight="585.0" prefWidth="937.0">
+               <children>
+                  <Label prefHeight="65.0" prefWidth="482.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="&quot;Des Réponses Rapides à Vos Questions&quot;">
+                     <font>
+                        <Font name="Monospaced Regular" size="12.0" />
+                     </font></Label>
+                  <TitledPane expanded="false" maxWidth="975.0" prefHeight="25.0" prefWidth="975.0" text="Mode d'Emploi du Logiciel">
+                     <content>
+                        <VBox>
+                           <children>
+                              <Text text="1. Connexion et Accueil" />
+                              <Text text="• Après la connexion, vous arrivez sur la page d'accueil où vous pouvez voir un résumé des activités de l'hôtel." />
+                              <Text text="2. Réservation" />
+                              <Text text="• Allez dans la section 'Réservations'. Vous pouvez ajouter, modifier ou supprimer des réservations facilement en cliquant sur les boutons correspondants." />
+                              <Text text="3. Gestion des Clients" />
+                              <Text text="• Dans l'onglet 'Clients', vous avez accès à toutes les informations des clients, ainsi que la possibilité de les modifier ou de les supprimer." />
+                              <Text text="4. Gestion des Employés" />
+                              <Text text="• L'onglet 'Employés' vous permet de gérer l'équipe de l'hôtel, d'ajouter de nouveaux employés ou de mettre à jour les informations existantes." />
+                              <Text text="5. Rapports" />
+                              <Text text="• La section 'Rapports' vous permet de générer des statistiques détaillées sur les performances de l'hôtel, comme les revenus, les réservations et les taux d'occupation." />
+                           </children>
+                        </VBox>
+                     </content>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane expanded="false" text="Comment puis-je effectuer une réservation pour un client ?">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="89.0" layoutY="-67.0" prefHeight="147.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pour effectuer une réservation, allez dans la section Réservations à partir du menu principal. Remplissez les informations du client (nom, prénom, contact), sélectionnez les dates d'arrivée et de départ, puis choisissez le type de chambre. Vous pouvez également ajouter des services supplémentaires comme le petit-déjeuner ou l'accès au spa avant de confirmer la réservation." wrappingWidth="965.1328125" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane expanded="false" layoutX="45.0" layoutY="290.0" text="Puis-je ajouter un nouveau client sans effectuer une réservation ?">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="89.0" layoutY="-67.0" prefHeight="147.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Oui. Accédez à la section Clients , puis cliquez sur le bouton Ajouter un Client . Remplissez les informations requises (nom, contact, adresse, etc.), puis enregistrez. Vous pouvez toujours revenir plus tard pour ajouter une réservation à ce client." wrappingWidth="965.1328125" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane expanded="false" layoutX="45.0" layoutY="115.0" text="Comment gérer les employés de l'hôtel ?">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="89.0" layoutY="-67.0" prefHeight="147.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dans la section Employés , vous pouvez ajouter, modifier ou supprimer les informations d'un employé. Cliquez sur Ajouter un Employé pour enregistrer un nouveau membre du personnel, ou sélectionnez un employé existant dans la liste pour mettre à jour ses informations ou le retirer." wrappingWidth="965.1328125" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane expanded="false" layoutX="-55.0" layoutY="140.0" text="Que faire en cas d'erreur ou de problème technique ?">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="89.0" layoutY="-67.0" prefHeight="147.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pour des problèmes non résolus, contactez le support technique à l'adresse suivante : support @legrandhorizon .com ." wrappingWidth="965.1328125" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane expanded="false" layoutX="-55.0" layoutY="165.0" text="Questions Fréquemment Posées (FAQ)">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="89.0" layoutY="-67.0" prefHeight="147.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="965.1328125" />
+                                    <Text text="1. Comment créer une réservation ?" />
+                                    <Text text="• Cliquez sur l'onglet 'Réservations', remplissez les informations nécessaires comme le nom du client, les dates de séjour et la chambre. Cliquez sur 'Enregistrer' pour finaliser la réservation." />
+                                    <Text text="2. Comment modifier une réservation existante ?" />
+                                    <Text text="• Sélectionnez la réservation dans la liste des réservations, puis cliquez sur 'Modifier'. Effectuez les changements nécessaires, puis cliquez sur 'Enregistrer'." />
+                                    <Text text="3. Comment voir les statistiques de l'hôtel ?" />
+                                    <Text text="• Allez dans l'onglet 'Tableau de Bord', vous y trouverez des graphiques indiquant les réservations et les revenus journaliers." />
+                                    <Text text="4. Comment ajouter un nouvel employé ?" />
+                                    <Text text="• Allez dans l'onglet 'Employés', cliquez sur 'Ajouter', remplissez les informations de l'employé et cliquez sur 'Enregistrer'." />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane expanded="false" layoutX="45.0" layoutY="190.0" text="Comment créer un compte utilisateur ?">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="30.0" layoutY="30.0" prefHeight="140.0" prefWidth="971.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="20.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="965.1328125" />
+                                    <Text text="Pour créer un compte, allez dans la section 'Créer Compte'. Remplissez les informations demandées (nom, email, mot de passe). Pour le moment, la fonctionnalité d'enregistrement est en cours de finalisation" wrappingWidth="938.6953125" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane layoutX="-55.0" layoutY="215.0" text="Quelles sont les prochaines fonctionnalités à venir ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="30.0" layoutY="30.0" prefHeight="140.0" prefWidth="971.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="20.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="965.1328125" />
+                                    <Text text="Des fonctionnalités comme la gestion complète des employés, des notifications, ainsi que des rapports avancés et d'autres fonctionnalités seront bientôt disponibles dans l'application." wrappingWidth="836.6953125" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </TitledPane>
+               </children>
+               <padding>
+                  <Insets left="-65.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <StackPane.margin>
+            <Insets left="150.0" top="65.0" />
+         </StackPane.margin>
+         <padding>
+            <Insets left="-400.0" top="-100.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="employeancho" layoutX="260.0" layoutY="80.0" onDragDetected="#switchform" prefHeight="620.0" prefWidth="897.0" style="-fx-background-radius: 20px; -fx-background-color: E7E7E7;" stylesheets="@../../../../Pictures/style.css" visible="false">
+         <children>
+            <HBox layoutX="22.0" layoutY="75.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="searchField" onAction="#rechercherEmploye" promptText="Rechercher un employé par nom ou poste..." style="-fx-border-color: #F9BA27; -fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                  <Button onAction="#rechercherEmploye" style="-fx-border-radius: #F9BA27;" text="Rechercher" />
+               </children>
+            </HBox>
+            <TableView fx:id="tabledonneeemploye" layoutX="64.0" layoutY="107.0" prefHeight="267.0" prefWidth="844.0" style="-fx-border-color: #F9BA27; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="50.0" text="ID" />
+                  <TableColumn fx:id="nomColumn" prefWidth="200.0" text="Nom et Prénom" />
+                  <TableColumn fx:id="posteColumn" prefWidth="150.0" text="Poste" />
+                  <TableColumn fx:id="salaireColumn" prefWidth="100.0" text="Salaire" />
+                  <TableColumn fx:id="dateEmbaucheColumn" prefWidth="150.0" text="Date d'embauche" />
+                  <TableColumn fx:id="prenomColumn" prefWidth="200.0" text="Commentaire" />
+               </columns>
+            </TableView>
+            <VBox layoutX="20.0" layoutY="405.0" spacing="10.0">
+               <children>
+                  <GridPane hgap="10.0" vgap="10.0">
+                     <children>
+                        <Label text="Nom &amp; Prenom :" GridPane.rowIndex="2" />
+                        <TextField fx:id="nomField" prefHeight="27.0" prefWidth="176.0" style="-fx-border-color: #F9BA27; -fx-background-radius: 5px; -fx-border-radius: 5px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label prefHeight="28.0" prefWidth="36.0" text="Poste :" GridPane.rowIndex="4" />
+                        <TextField fx:id="posteField" prefHeight="14.0" prefWidth="176.0" style="-fx-border-color: #F9BA27; -fx-background-radius: 5px; -fx-border-radius: 5px;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Salaire :" GridPane.rowIndex="5" />
+                        <TextField fx:id="salaireField" style="-fx-border-color: #F9BA27; -fx-background-radius: 5px; -fx-border-radius: 5px;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Date d'embauche :" GridPane.rowIndex="6" />
+                        <DatePicker fx:id="dateEmbauchePicker" style="-fx-border-color: #F9BA27; -fx-background-radius: 5px; -fx-border-radius: 5px;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+            <HBox layoutX="628.0" layoutY="581.0" prefHeight="29.0" prefWidth="242.0" spacing="10.0">
+               <children>
+                  <Button onAction="#ajouterEmploye" prefHeight="29.0" prefWidth="83.0" styleClass="pane1" stylesheets="@../../../../Pictures/style.css" text="Ajouter" textFill="#ddd5d5" />
+                  <Button onAction="#reinitialiserFormulairee" prefHeight="29.0" prefWidth="125.0" styleClass="pane1" stylesheets="@../../../../Pictures/style.css" text="Réinitialiser" textFill="#ddd5d5" />
+               </children>
+            </HBox>
+            <TextField fx:id="prenomField" layoutX="710.0" layoutY="390.0" prefHeight="75.0" prefWidth="203.0" style="-fx-border-color: #F9BA27; -fx-background-radius: 5px; -fx-border-radius: 5px;" />
+            <Label layoutX="624.0" layoutY="397.0" text="Commentaire :" />
+            <Label layoutX="42.0" layoutY="1.0" prefHeight="65.0" prefWidth="482.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="&quot;Optimisez la Gestion de Votre Équipe&quot;">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <StackPane.margin>
+            <Insets left="250.0" top="65.0" />
+         </StackPane.margin>
+      </AnchorPane>
+   </children>
+</StackPane>

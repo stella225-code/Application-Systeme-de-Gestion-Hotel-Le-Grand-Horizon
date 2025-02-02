@@ -1,0 +1,108 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */	
+
+
+.root1{
+    -fx-background-color: #f2f2f2;
+       /*-fx-border-color:#748CF1;*/
+   /*-fx-border-width : 2px 2px 2px 2px;*/
+   -fx-border-radius : 20px;
+   -fx-background-radius : 20px;
+   -fx-border-style : none ;}
+   
+ .textfield:focused{
+ -fx-border-color:#020202;
+  -fx-border-width : 0px 0px 2px 0px;
+ }
+
+.textfield{
+    -fx-background-color:#fff;
+   -fx-border-color:linear-gradient(to bottom right,#540608,#FAB411);
+   -fx-border-width : 0px 0px 4px 0px;
+   -fx-font-size :13px;
+   }
+/*    -fx-border-radius : 15px;
+   -fx-background-radius : 15px;
+   -fx-border-style : solid;}*/
+
+.pane5{
+    -fx-background-color: #dbbc19;
+   -fx-border-color:#dbbc19;
+   -fx-border-width : 2px 2px 2px 2px;
+   -fx-border-radius : 20px;
+   -fx-background-radius : 20px;
+   -fx-border-style : solid;}
+.pane7{
+     -fx-background-color: #d3b829;
+   /*-fx-border-color:#748CF1;*/
+   /*-fx-border-width : 2px 2px 2px 2px;*/
+   -fx-border-radius : 20px;
+   -fx-background-radius : 20px;
+   -fx-border-style : none ;}
+
+.button_accueil{
+   -fx-background-color: linear-gradient(to bottom right,#FAB411 ,#f2f2f2);
+   -fx-border-color:#e2c425;
+   -fx-border-width : 2px 2px 2px 2px;
+   -fx-border-radius : 50px;
+   -fx-background-radius : 50px;
+   -fx-border-style : solid;
+   -fx-cursor:hand; }
+   
+  
+.button:hover{
+	-fx-background-color:#FAB411;}
+	
+	
+.button_accueil2{
+   -fx-background-color: #020202;
+  /* -fx-border-color:#e2c425;*/
+   -fx-border-width : 2px 2px 2px 2px;
+   -fx-border-radius : 50px;
+   -fx-background-radius : 50px;
+   -fx-border-style : none;}
+.text_recherche{
+    -fx-background-color: #020202;
+   /*-fx-border-color:#2207bb;*/
+   -fx-border-width : 2px 2px 2px 2px;
+   -fx-border-radius : 20px;
+   -fx-background-radius : 19px;
+   -fx-border-style : solid;}
+.pane1{
+    -fx-background-color: #020202;
+   -fx-border-color:#e2c425;
+   -fx-border-width : 2px 2px 2px 2px;
+   -fx-border-radius : 20px;
+   -fx-background-radius : 20px;
+   -fx-border-style : solid;}
+.progress{
+      /*-fx-border-width : 2px 2px 2px 2px;*/
+   -fx-border-radius : 50px;
+   -fx-background-radius : 50px;
+}
+.pane2{
+    -fx-background-color: #FFC36D;
+   /*-fx-border-color:#2207bb;*/
+   -fx-border-width : 2px 2px 2px 2px;
+   -fx-border-radius : 20px;
+   -fx-background-radius : 20px;
+   -fx-border-style : none;}
+
+.pane3{
+   -fx-background-color:linear-gradient(to bottom right,#FAB411 ,#f2f2f2);
+   /*-fx-border-color:#2207bb;*/
+   -fx-border-width : 2px 2px 2px 2px;
+   -fx-border-radius : 20px;
+   -fx-background-radius : 20px;
+   -fx-border-style : none;} 
+   
+   .pane3b{
+   -fx-background-color:linear-gradient(to bottom right,#540608,#FAB411 ,#f2f2f2);
+   /*-fx-border-color:#2207bb;*/
+   -fx-border-width : 0px 0px 2px 0px;
+   -fx-border-radius : 20px;
+   -fx-background-radius : 20px;
+   -fx-border-style : none;} 
+  
+.table-view .column-header-background  , .filter{
+	-fx-background-color:linear-gradient(to bottom right,#FAB411 ,#f2f2f2);
+}

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HoteloranaisSystemDeGestionController">
+   <children>
+      <ImageView fitHeight="888.0" fitWidth="551.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../HotelManagementSystem/src/application/image/images/craiyon_210930_HOTEL_ORANAIS.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="627.0" fitWidth="922.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Leonardo_Phoenix_A_luxurious_and_modern_homepage_design_for_Le_0.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="root1" prefHeight="600.0" prefWidth="1041.0" StackPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="83.0" layoutY="88.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="500.0" styleClass="pane1" stylesheets="@application.css">
+               <children>
+                  <AnchorPane layoutX="2.0" layoutY="2.0" prefHeight="468.0" prefWidth="235.0" styleClass="pane3" stylesheets="@application.css">
+                     <children>
+                        <Label layoutX="29.0" layoutY="182.0" text="Systeme de Gestion " textFill="#a13939">
+                           <font>
+                              <Font name="Britannic Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="36.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Capture%20d’écran%202024-09-13%20104507.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="260.0" prefHeight="471.0" prefWidth="235.0" style="-fx-background-color: white;" styleClass="pane1" stylesheets="@application.css">
+                     <children>
+                        <Label layoutX="34.0" layoutY="99.0" text="Se Connecter">
+                           <font>
+                              <Font name="Britannic Bold" size="24.0" />
+                           </font></Label>
+                        <TextField fx:id="usertfd" layoutX="20.0" layoutY="170.0" prefHeight="30.0" prefWidth="185.0" promptText="Username" styleClass="pane3b" stylesheets="@application.css">
+                           <font>
+                              <Font name="Britannic Bold" size="17.0" />
+                           </font></TextField>
+                        <PasswordField fx:id="password" layoutX="20.0" layoutY="236.0" prefHeight="30.0" prefWidth="185.0" promptText="Password" styleClass="pane3b" stylesheets="@application.css">
+                           <font>
+                              <Font name="Britannic Bold" size="16.0" />
+                           </font></PasswordField>
+                        <Button fx:id="loginbtn" layoutX="69.0" layoutY="303.0" mnemonicParsing="false" onAction="#loginx" prefHeight="29.0" prefWidth="92.0" styleClass="button_accueil" stylesheets="@application.css" text=" Connexion" textFill="#2c2929">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="crercompt" layoutX="116.0" layoutY="436.0" mnemonicParsing="false" onAction="#crercompte" prefHeight="29.0" prefWidth="123.0" style="-fx-background-color: transparent;" styleClass="pane1" stylesheets="@application.css" text="Creer un compte ?" textFill="#141313">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font></Button>
+                        <ImageView fitHeight="81.0" fitWidth="191.0" layoutX="69.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/44948.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="28.0" layoutY="147.0" prefHeight="17.0" prefWidth="92.0" text="Email">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="216.0" prefHeight="17.0" prefWidth="92.0" text="Mot de passe">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="close" cancelButton="true" layoutX="445.0" layoutY="120.0" mnemonicParsing="false" onAction="#exit" prefHeight="12.0" prefWidth="30.0" style="-fx-background-color: ytansparent;" stylesheets="@application.css">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../HotelManagementSystem/src/application/image/images/13984450.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="266.0" prefHeight="58.0" prefWidth="510.0" text="BIENVENUE AU GRAND HORIZON HOTEL!! ">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.06578947603702545" green="0.055027615278959274" blue="0.03350389748811722" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8289473652839661" green="0.40756580233573914" blue="0.12664473056793213" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="621.0" layoutY="449.0" prefHeight="81.0" prefWidth="311.0" text="Simplifiez la gestion de l'hotel : tout a portée de main !" textFill="#f29797">
+               <font>
+                  <Font name="Bradley Hand ITC" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="584.0" prefHeight="17.0" prefWidth="165.0" text="Conception par Grace Douzo">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="close21" layoutX="959.0" layoutY="6.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent; -fx-background-radius: 8px;">
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../HoteloranaisSystemDeGestion/src/application/image/images/15665883.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="181.0" fitWidth="318.0" layoutX="680.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Leonardo_Phoenix_A_sleek_and_modern_digital_illustration_of_a_3%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="166.0" fitWidth="243.0" layoutX="605.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Leonardo_Phoenix_A_sleek_and_modern_digital_illustration_of_a_0.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginbtn1" layoutX="689.0" layoutY="407.0" mnemonicParsing="false" onAction="#loginx" prefHeight="39.0" prefWidth="160.0" styleClass="button_accueil" stylesheets="@application.css" text="Decouvrez Maintenant" textFill="#2c2929">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="factureAnchorPane" prefHeight="594.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.factureController">
+    <children>
+        <!-- En-tête : Logo, Nom de l'Hôtel, Adresse -->
+        <HBox layoutX="21.0" layoutY="14.0" prefHeight="84.0" prefWidth="608.0" spacing="10.0">
+           <!-- <ImageView fx:id="logoHotel" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         -->
+            <VBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="525.0" style="-fx-background-radius: 0px;" styleClass="pane3" stylesheets="@application.css">
+                <Label prefHeight="27.0" prefWidth="280.0" text="Hôtel Le Grand Horizon">
+                    <font>
+                        <Font name="Arial Bold" size="24" />
+                    </font>
+                </Label>
+                <Label text="Adresse : Rue de la Côte, Abidjan, Côte d'Ivoire" />
+                <Label text="Email : contact@legrandhorizon.ci" />
+                <Label text="Téléphone : +225 01 23 45 67" />
+            </VBox>
+        </HBox>
+
+        <!-- Informations du Client -->
+        <VBox layoutX="20.0" layoutY="120.0" spacing="10.0">
+            <Label text="Informations du Client">
+                <font>
+                    <Font name="Book Antiqua Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label fx:id="nomClientLabel" prefHeight="17.0" prefWidth="200.0" text="Nom : Jean Dupont" textAlignment="RIGHT" />
+            <Label fx:id="adresseClientLabel" text="Adresse : 123 Rue de la Paix, Abidjan" />
+            <Label fx:id="telephoneClientLabel" text="Téléphone : +225 07 89 01 23" />
+            <Label fx:id="emailClientLabel" text="Email : jean.dupont@example.com" />
+        </VBox>
+
+        <!-- Détails de la Facture -->
+        <VBox layoutX="304.0" layoutY="121.0" spacing="10.0">
+            <Label text="Détails de la Facture">
+                <font>
+                    <Font name="Book Antiqua Bold" size="18.0" />
+                </font>
+            </Label>
+            <Label fx:id="numerochambrelabel" text="Numéro de la Facture : 2024-001" />
+            <Label fx:id="checkinLabel" text="Date d'émission : 21 août 2024" />
+            <Label fx:id="checkoutLabel" text="Dates de Séjour : 19 août 2024 " />
+        </VBox>
+
+        <!-- Total -->
+        <VBox layoutX="26.0" layoutY="373.0" prefHeight="65.0" prefWidth="336.0" spacing="5.0">
+            <HBox spacing="10.0" />
+            <HBox spacing="10.0" />
+        </VBox>
+
+        <!-- Pied de Page -->
+        <VBox layoutX="25.0" layoutY="476.0" spacing="10.0">
+            <Label prefHeight="12.0" prefWidth="462.0" text="Merci pour votre séjour à l'Hôtel Le Grand Horizon. Nous espérons vous revoir bientôt.">
+            <font>
+               <Font name="Britannic Bold" size="12.0" />
+            </font></Label>
+            <Label text="Veuillez régler votre facture à la réception ou via notre service de paiement en ligne.">
+            <font>
+               <Font name="Britannic Bold" size="12.0" />
+            </font></Label>
+            <Label text="Pour toute question, veuillez nous contacter à l'adresse email indiquée ci-dessus.">
+            <font>
+               <Font name="Britannic Bold" size="12.0" />
+            </font></Label>
+        </VBox>
+      <TextField layoutX="27.0" layoutY="379.0" prefHeight="65.0" prefWidth="460.0" />
+      <Label layoutX="27.0" layoutY="354.0" prefHeight="17.0" prefWidth="151.0" text="Commentaire">
+         <font>
+            <Font name="Book Antiqua Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="603.0" layoutY="20.0" mnemonicParsing="false" onAction="#imprimerFacture" prefHeight="25.0" prefWidth="119.0" style="-fx-border-color: blue;" text="Imprimer" />
+         <HBox layoutX="21.0" layoutY="288.0" spacing="10.0">
+             <Label text="Total :">
+                 <font>
+                     <Font name="Arial Bold" size="18" />
+                 </font>
+             </Label>
+             <Label fx:id="montantTotalLabel" prefHeight="21.0" prefWidth="218.0" text="147,000 FCFA">
+                 <font>
+                     <Font name="Arial Bold" size="18" />
+                 </font>
+             </Label>
+         </HBox>
+      <Label fx:id="taxeLabel" layoutX="25.0" layoutY="269.0" prefHeight="17.0" prefWidth="190.0" />
+      <Line endX="-92.0" endY="487.0" layoutX="629.0" layoutY="107.0" startX="-92.0" startY="-100.0" />
+    </children>
+</AnchorPane>
